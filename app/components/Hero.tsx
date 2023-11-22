@@ -1,12 +1,8 @@
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { socials } from "@/lib/static";
 import Link from "next/link";
 
 
-const socials = [
-  { label: "GitHub", icon: <FaGithub size={32} />, href: "https://github.com/aktssam" },
-  { label: "LinkedIn", icon: <FaLinkedin size={32} />, href: "https://linkedin.com/in/aktssam" },
-  { label: "Email", icon: <FaEnvelope size={32} />, href: "mailto:aktssam.alfarisi@gmail.com" }
-]
+
 
 
 export default function Hero() {
