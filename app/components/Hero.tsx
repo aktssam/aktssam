@@ -1,8 +1,11 @@
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+
 
 const socials = [
-  { label: "GitHub", icon: {} },
-  { label: "LinkedIn", icon: {} },
-  { label: "Email", icon: {} }
+  { label: "GitHub", icon: <FaGithub size={32} />, href: "https://github.com/aktssam" },
+  { label: "LinkedIn", icon: <FaLinkedin size={32} />, href: "https://linkedin.com/in/aktssam" },
+  { label: "Email", icon: <FaEnvelope size={32} />, href: "mailto:aktssam.alfarisi@gmail.com" }
 ]
 
 
@@ -17,6 +20,13 @@ export default function Hero() {
           <p className="mt-6 text-lg leading-8 text-gray-600">
             I'm a fresh graduate with a passion for programming. Join me on this exciting journey as I explore the latest trends, share my insights & coding adventures. Currently learning about Next.JS
           </p>
+          <div className="mt-8 flex items-center justify-center gap-x-6">
+            {socials.map((item) => (
+              <Link key={item.href} href={item.href} className="text-gray-800 hover:text-sky-700" target="_blank">
+                {item.icon}
+              </Link>
+            ))}
+          </div>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
