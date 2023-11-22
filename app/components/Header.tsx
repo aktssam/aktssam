@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <Image src="/aktssam.svg" alt="logo" height={20} width={125} />
+            <Image src="/aktssam.svg" alt="logo" height={16} width={92} />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -55,7 +55,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <Image src="/aktssam.svg" alt="logo" height={20} width={125} />
+              <Image src="/aktssam.svg" alt="logo" height={16} width={92} />
             </a>
             <button
               type="button"

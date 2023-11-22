@@ -2,9 +2,6 @@ import { socials } from "@/lib/static";
 import Link from "next/link";
 
 
-
-
-
 export default function Hero() {
   return (
     <div className="relative isolate px-6 pt-52 ">
