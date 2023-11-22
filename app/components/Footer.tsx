@@ -4,12 +4,12 @@ import { socials } from '@/lib/static'
 
 export default function Footer() {
   return (
-    <footer className="bg-white  border-t border-gray-200">
+    <footer className="bg-white border-t border-gray-200">
       <div
-        className="mx-auto max-w-screen-xl space-y-6 px-4 py-8 sm:px-6 lg:space-y-16 lg:px-8"
+        className="mx-auto max-w-6xl space-y-6 px-6 py-8 lg:space-y-16 lg:px-8"
       >
         <div className="flex items-start justify-between">
-          <Image src="/aktssam.svg" width={86} height={16} alt="Aktssam" />
+          <Image src="/logo-black.svg" width={86} height={16} alt="Aktssam" />
 
           <ul className="flex justify-start gap-6">
             {socials.map((item) => (

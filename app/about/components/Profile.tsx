@@ -7,9 +7,13 @@ import { socials } from '@/lib/static'
 export default function Profile() {
   return (
     <div className="w-full self-center px-5 md:w-2/5 text-center md:text-left mb-auto">
-      <Image src="/profile.jpg" width={215} height={215} alt="Muhammad Aktssam Alfarisi" className="rounded-full mx-auto md:mx-0" />
-      <h1 className="text-4xl font-bold tracking-tight text-gray-900 md:text-4xl mt-4">
-        Muhammad Aktssam <br /> Alfarisi
+      <div className="bg-gradient-to-br from-blue-700 to-sky-300 p-2 rounded-full max-w-fit shadow-xl mx-auto md:mx-0">
+        <div className="block bg-white p-2 rounded-full">
+          <Image src="/profile.jpg" width={215} height={215} alt="Muhammad Aktssam Alfarisi" className="rounded-full" />
+        </div>
+      </div>
+      <h1 className="text-4xl font-bold tracking-tight text-gray-900 md:text-4xl mt-8">
+        Muhammad Aktssam Alfarisi
       </h1>
 
       <div className="flex gap-x-2 mt-3 text-gray-500 justify-center md:justify-start">

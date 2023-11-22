@@ -19,11 +19,11 @@ export default function Header() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
-      <nav className="flex items-center justify-between p-6 lg:px-8 fixed w-full border-b backdrop-blur-sm" aria-label="Global">
+      <nav className="flex items-center justify-between p-6 lg:px-8 fixed w-full border-b backdrop-blur-lg shadow" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <Image src="/aktssam.svg" alt="logo" height={16} width={92} />
+            <span className="sr-only">Aktssam</span>
+            <Image src="/logo-mini.svg" alt="logo" height={32} width={32} />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -44,7 +44,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900  hover:text-blue-700 px-4 py-2 border rounded">
+          <a href="#" className="text-sm font-semibold leading-6 text-blue-700 hover:text-blue-900 px-4 py-2 rounded-xl border border-blue-700 shadow hover:shadow-none">
             Contact me <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -53,9 +53,9 @@ export default function Header() {
         <div className="fixed inset-0 z-50" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <Image src="/aktssam.svg" alt="logo" height={16} width={92} />
+            <a href="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">Aktssam</span>
+              <Image src="/logo-mini.svg" alt="logo" height={32} width={32} />
             </a>
             <button
               type="button"
