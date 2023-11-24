@@ -3,11 +3,10 @@ import React from 'react'
 export default function Description() {
   return (
     <div className="w-full self-end mt-10 md:mb-auto md:mt-0 md:w-3/5">
-      <section className="text-center md:text-left mb-8">
+      <section className="text-left mb-8">
         <h2 className="text-2xl font-semibold mb-4 pb-3 border-b text-blue-700">About me</h2>
         <p className="text-lg text-gray-800">
           I’m a fresh graduate of Informatics Department and I have gained experience in web programming, having worked as an intern in a Flutter development for 3 month. Loved to exploring new technologies and currently learning NextJS. I am a proactive, responsible, and motivated individual to learn and grow.
-
         </p>
       </section>
       <section className="text-left mb-8">
@@ -34,7 +33,6 @@ export default function Description() {
           </p>
         </div>
       </section>
-
     </div>
   )
 }

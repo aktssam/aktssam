@@ -8,9 +8,8 @@ import Image from "next/image";
 
 const navigation = [
   { name: 'Home', href: '/' },
-  // { name: 'About', href: '#' },
   { name: 'About', href: '/about' },
-  { name: 'Projects', href: '#' },
+  { name: 'Projects', href: '/projects' },
   { name: 'Gallery', href: '#' },
 ]
 
@@ -23,7 +22,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Aktssam</span>
-            <Image src="/logo-mini.svg" alt="logo" height={32} width={32} />
+            <Image src="assets/logo/mini.svg" alt="logo" height={32} width={32} />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -55,7 +54,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Aktssam</span>
-              <Image src="/logo-mini.svg" alt="logo" height={32} width={32} />
+              <Image src="assets/logo/mini.svg" alt="logo" height={32} width={32} />
             </a>
             <button
               type="button"

@@ -6,15 +6,15 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200">
       <div
-        className="mx-auto max-w-6xl space-y-6 px-6 py-8 lg:space-y-16 lg:px-8"
+        className="mx-auto max-w-7xl space-y-6 px-6 py-8 lg:space-y-16 lg:px-8"
       >
-        <div className="flex items-start justify-between">
-          <Image src="/logo-black.svg" width={86} height={16} alt="Aktssam" />
+        <div className="flex items-start justify-between text-gray-400">
+          <Image src="assets/logo/black.svg" width={86} height={16} alt="Aktssam" />
 
           <ul className="flex justify-start gap-6">
             {socials.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="text-gray-400 hover:text-sky-700">{item.icon}</Link>
+                <Link href={item.href} className="hover:text-sky-700">{item.icon}</Link>
               </li>
             ))}
           </ul>
