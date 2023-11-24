@@ -1,6 +1,12 @@
-import React from 'react'
+import { Metadata } from 'next'
+
 import Profile from './components/Profile'
 import Description from './components/Description'
+
+export const metadata: Metadata = {
+  title: 'About me | Aktssam',
+  description: 'Aktssam\'s Personal Website',
+}
 
 export default function About() {
   return (

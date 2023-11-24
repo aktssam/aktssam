@@ -1,28 +1,13 @@
-import Image from "next/image"
+import { Metadata } from "next"
 import { SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si"
+import Image from "next/image"
 
-const posts = [
-  {
-    id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
-    description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
-    datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
-    author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-    },
-  },
-  // More posts...
-]
+export const metadata: Metadata = {
+  title: 'Projects | Aktssam',
+  description: 'Aktssam\'s Personal Website',
+}
 
-export default function Example() {
+export default function Projects() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -40,7 +25,7 @@ export default function Example() {
             <div className="flex w-full justify-between">
               <div className="flex w-full text-xs gap-x-2">
                 <a href="/" className="relative z-10 rounded-full bg-blue-600 px-3 py-1.5 font-medium text-white hover:bg-blue-800">Demo</a>
-                <a href="#" className="relative z-10 rounded-full px-3 py-1.5 font-medium text-gray-800 border hover:bg-gray-100">Source Code</a>
+                <a href="#" className="relative z-10 rounded-full px-3 py-1.5 font-medium text-gray-800  hover:bg-gray-100">Source Code</a>
               </div>
               <ul className="flex items-center gap-x-2 text-gray-500">
                 <li><SiVercel size={18} /></li>

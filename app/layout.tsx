@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+
 import Header from './components/Header'
 import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Muhammad Aktssam A.',
-  description: 'Personal Website',
+  title: 'Aktssam',
+  description: 'Aktssam\'s Personal Website',
 }
 
 export default function RootLayout({

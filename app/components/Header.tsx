@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Projects', href: '/projects' },
-  { name: 'Gallery', href: '#' },
+  { name: 'Gallery', href: '/gallery' },
 ]
 
 export default function Header() {
@@ -43,7 +43,7 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-blue-700 hover:text-blue-900 px-4 py-2 rounded-xl border border-blue-700 shadow hover:shadow-none">
+          <a href="/contact" className="text-sm font-semibold leading-6 bg-blue-700 text-white px-4 py-2 rounded-lg shadow hover:shadow-none">
             Contact me <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
@@ -80,7 +80,7 @@ export default function Header() {
               </div>
               <div className="py-6">
                 <a
-                  href="/"
+                  href="/contact"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Contact me
